@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lux&egrave;re Beauty | Makeup Collection</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><a href="index.html">LU<span>X</span>&Egrave;RE</a></div>
+  <ul class="nav-links">
+    <li><a href="index.html#featured-products">New Arrivals</a></li>
+    <li><a href="index.html#categories">Skincare</a></li>
+    <li><a href="makeup.html" aria-current="page">Makeup</a></li>
+    <li><a href="index.html#categories">Fragrance</a></li>
+    <li><a href="index.html#collections">Collections</a></li>
+  </ul>
+  <div class="nav-icons">
+    <button class="nav-icon-btn" title="Search" type="button">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    </button>
+    <button class="nav-icon-btn" title="Account" type="button">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+    </button>
+    <div class="cart-wrap">
+      <button class="nav-icon-btn" title="Cart" type="button">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+      </button>
+      <div class="cart-badge">3</div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-copy">
+    <p class="page-kicker">&#10022; Makeup Atelier</p>
+    <h1 class="page-title">Shape, Define<br /><em>and Illuminate</em></h1>
+    <p class="page-copy">A curated edit of lip, eye, and complexion staples designed for soft-focus skin, statement colour, and effortless day-to-evening looks.</p>
+    <div class="hero-cta">
+      <a class="btn-primary" href="#skintone-filter">Shop by Skintone</a>
+      <a class="btn-ghost" href="index.html">Back to Home</a>
+    </div>
+    <div class="filter-chips">
+      <span class="filter-chip">Lips</span>
+      <span class="filter-chip">Eyes</span>
+      <span class="filter-chip">Complexion</span>
+      <span class="filter-chip">Glow</span>
+      <span class="filter-chip">Longwear</span>
+    </div>
+  </div>
+  <div class="page-hero-media">
+    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&w=1200&q=85" alt="Luxury makeup set arranged on a vanity" />
+    <div class="floating-card">
+      <p class="floating-card-label">Editor's Pick</p>
+      <h3>Velvet Matte Lipstick</h3>
+      <p>Rich pigment, blurred edges, and a comfortable finish that wears beautifully from afternoon plans to evening events.</p>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-bar">
+  <div class="marquee-inner">
+    <span>15+ Curated Makeup Staples</span><span class="dot">&#10022;</span>
+    <span>Soft Matte and Satin Finishes</span><span class="dot">&#10022;</span>
+    <span>Buildable Pigment</span><span class="dot">&#10022;</span>
+    <span>Complexion and Eye Essentials</span><span class="dot">&#10022;</span>
+    <span>Made for Everyday Glam</span><span class="dot">&#10022;</span>
+    <span>15+ Curated Makeup Staples</span><span class="dot">&#10022;</span>
+    <span>Soft Matte and Satin Finishes</span><span class="dot">&#10022;</span>
+    <span>Buildable Pigment</span><span class="dot">&#10022;</span>
+    <span>Complexion and Eye Essentials</span><span class="dot">&#10022;</span>
+    <span>Made for Everyday Glam</span><span class="dot">&#10022;</span>
+  </div>
+</div>
+
+<!-- SKINTONE FILTER SECTION -->
+<section class="skintone-filter" id="skintone-filter">
+  <div class="filter-container">
+    <div class="filter-header">
+      <h2 class="section-title">Filter by Skintone</h2>
+      <p class="filter-description">Choose your skin tone to see personalized product recommendations</p>
+    </div>
+    <div class="skintone-checkboxes">
+      <label class="skintone-checkbox">
+        <input type="checkbox" value="fair" onchange="filterBySkintone()"> Fair
+      </label>
+      <label class="skintone-checkbox">
+        <input type="checkbox" value="light" onchange="filterBySkintone()"> Light
+      </label>
+      <label class="skintone-checkbox">
+        <input type="checkbox" value="medium" onchange="filterBySkintone()"> Medium
+      </label>
+      <label class="skintone-checkbox">
+        <input type="checkbox" value="tan" onchange="filterBySkintone()"> Tan
+      </label>
+      <label class="skintone-checkbox">
+        <input type="checkbox" value="deep" onchange="filterBySkintone()"> Deep
+      </label>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="makeup-products">
+  <div class="section-header">
+    <p class="section-label">&#10022; Makeup Collection</p>
+    <h2 class="section-title">Complexion, Lips<br />and Eye Essentials</h2>
+    <p class="section-sub">A full makeup section with 15+ products including eyeliner, compact powder, lipstick, mascara, primer, blush, and more.</p>
+  </div>
+  <div class="products-grid">
+    <!-- Product 1: Velvet Matte Lipstick -->
+    <article class="product-card" data-skintones="fair,light,medium,tan,deep">
+      <div class="card-img" style="background:#F2D9D2;">
+        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&w=900&q=85" alt="Velvet Matte Lipstick" loading="lazy" />
+        <span class="card-badge badge-new">New</span>
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Atelier</p>
+        <h3 class="card-name">Velvet Matte Lipstick</h3>
+        <div class="card-stars">★★★★★ <span class="card-reviews">(214)</span></div>
+        <div class="card-price-row"><span class="card-price">$36</span></div>
+      </div>
+    </article>
+
+    <!-- Product 2: Precision Liquid Eyeliner -->
+    <article class="product-card" data-skintones="fair,light,medium,tan,deep">
+      <div class="card-img" style="background:#EFD4D8;">
+        <img src="https://images.unsplash.com/photo-1605331221473-06b97b6b6cf5?auto=format&w=900&q=85" alt="Precision Liquid Eyeliner" loading="lazy" />
+        <span class="card-badge badge-sale">&minus;15%</span>
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Studio</p>
+        <h3 class="card-name">Precision Liquid Eyeliner</h3>
+        <div class="card-stars">★★★★☆ <span class="card-reviews">(167)</span></div>
+        <div class="card-price-row"><span class="card-price">$24</span><span class="card-price-old">$28</span></div>
+      </div>
+    </article>
+
+    <!-- Product 3: Soft Focus Compact Powder -->
+    <article class="product-card" data-skintones="fair,light,medium,tan,deep">
+      <div class="card-img" style="background:#E8DCCB;">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&w=900&q=85" alt="Soft Focus Compact Powder" loading="lazy" />
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Skin</p>
+        <h3 class="card-name">Soft Focus Compact Powder</h3>
+        <div class="card-stars">★★★★★ <span class="card-reviews">(193)</span></div>
+        <div class="card-price-row"><span class="card-price">$34</span></div>
+      </div>
+    </article>
+
+    <!-- Product 4: Lash Lift Mascara -->
+    <article class="product-card" data-skintones="fair,light,medium,tan,deep">
+      <div class="card-img" style="background:#E7D6D9;">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&w=900&q=85" alt="Lash Lift Mascara" loading="lazy" />
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Studio</p>
+        <h3 class="card-name">Lash Lift Mascara</h3>
+        <div class="card-stars">★★★★★ <span class="card-reviews">(248)</span></div>
+        <div class="card-price-row"><span class="card-price">$29</span></div>
+      </div>
+    </article>
+
+    <!-- Product 5: Kohl Kajal Pencil -->
+    <article class="product-card" data-skintones="medium,tan,deep">
+      <div class="card-img" style="background:#F2E1D6;">
+        <img src="https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?auto=format&w=900&q=85" alt="Kohl Kajal Pencil" loading="lazy" />
+        <span class="card-badge badge-new">New</span>
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Color</p>
+        <h3 class="card-name">Kohl Kajal Pencil</h3>
+        <div class="card-stars">★★★★☆ <span class="card-reviews">(139)</span></div>
+        <div class="card-price-row"><span class="card-price">$18</span></div>
+      </div>
+    </article>
+
+    <!-- Product 6: Skin Veil Foundation -->
+    <article class="product-card" data-skintones="fair,light,medium,tan,deep">
+      <div class="card-img" style="background:#E6DED5;">
+        <img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd12b55?auto=format&w=900&q=85" alt="Skin Veil Foundation" loading="lazy" />
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Skin</p>
+        <h3 class="card-name">Skin Veil Foundation</h3>
+        <div class="card-stars">★★★★★ <span class="card-reviews">(221)</span></div>
+        <div class="card-price-row"><span class="card-price">$42</span></div>
+      </div>
+    </article>
+
+    <!-- Product 7: Brightening Concealer -->
+    <article class="product-card" data-skintones="fair,light,medium">
+      <div class="card-img" style="background:#F1DDD8;">
+        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&w=900&q=85" alt="Brightening Concealer" loading="lazy" />
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Skin</p>
+        <h3 class="card-name">Brightening Concealer</h3>
+        <div class="card-stars">★★★★☆ <span class="card-reviews">(154)</span></div>
+        <div class="card-price-row"><span class="card-price">$26</span></div>
+      </div>
+    </article>
+
+    <!-- Product 8: Silk Touch Primer -->
+    <article class="product-card" data-skintones="fair,light,medium,tan,deep">
+      <div class="card-img" style="background:#E7E0D8;">
+        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&w=900&q=85" alt="Silk Touch Primer" loading="lazy" />
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Prep</p>
+        <h3 class="card-name">Silk Touch Primer</h3>
+        <div class="card-stars">★★★★★ <span class="card-reviews">(198)</span></div>
+        <div class="card-price-row"><span class="card-price">$31</span></div>
+      </div>
+    </article>
+
+    <!-- Product 9: Rose Flush Blush -->
+    <article class="product-card" data-skintones="fair,light,medium,tan">
+      <div class="card-img" style="background:#F0D5D7;">
+        <img src="https://images.unsplash.com/photo-1599733589046-10c005739b6d?auto=format&w=900&q=85" alt="Rose Flush Blush" loading="lazy" />
+        <span class="card-badge badge-sale">&minus;20%</span>
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Color</p>
+        <h3 class="card-name">Rose Flush Blush</h3>
+        <div class="card-stars">★★★★★ <span class="card-reviews">(173)</span></div>
+        <div class="card-price-row"><span class="card-price">$27</span><span class="card-price-old">$34</span></div>
+      </div>
+    </article>
+
+    <!-- Product 10: Golden Hour Highlighter -->
+    <article class="product-card" data-skintones="medium,tan,deep">
+      <div class="card-img" style="background:#EADBC5;">
+        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&w=900&q=85" alt="Golden Hour Highlighter" loading="lazy" />
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Glow</p>
+        <h3 class="card-name">Golden Hour Highlighter</h3>
+        <div class="card-stars">★★★★★ <span class="card-reviews">(205)</span></div>
+        <div class="card-price-row"><span class="card-price">$30</span></div>
+      </div>
+    </article>
+
+    <!-- Product 11: Brow Sculpt Gel -->
+    <article class="product-card" data-skintones="fair,light,medium,tan,deep">
+      <div class="card-img" style="background:#DBD5D2;">
+        <img src="https://images.unsplash.com/photo-1515688594390-b649af70d282?auto=format&w=900&q=85" alt="Brow Sculpt Gel" loading="lazy" />
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Studio</p>
+        <h3 class="card-name">Brow Sculpt Gel</h3>
+        <div class="card-stars">★★★★☆ <span class="card-reviews">(126)</span></div>
+        <div class="card-price-row"><span class="card-price">$22</span></div>
+      </div>
+    </article>
+
+    <!-- Product 12: Nude Lip Liner -->
+    <article class="product-card" data-skintones="fair,light,medium,tan">
+      <div class="card-img" style="background:#F0D4CE;">
+        <img src="https://images.unsplash.com/photo-1631214540553-ff044a3cc0a7?auto=format&w=900&q=85" alt="Nude Lip Liner" loading="lazy" />
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Atelier</p>
+        <h3 class="card-name">Nude Lip Liner</h3>
+        <div class="card-stars">★★★★★ <span class="card-reviews">(146)</span></div>
+        <div class="card-price-row"><span class="card-price">$19</span></div>
+      </div>
+    </article>
+
+    <!-- Product 13: Dew Lock Setting Spray -->
+    <article class="product-card" data-skintones="fair,light,medium,tan,deep">
+      <div class="card-img" style="background:#E4D9D5;">
+        <img src="https://images.unsplash.com/photo-1578926314433-149f67f23d6f?auto=format&w=900&q=85" alt="Dew Lock Setting Spray" loading="lazy" />
+        <span class="card-badge badge-new">New</span>
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Finish</p>
+        <h3 class="card-name">Dew Lock Setting Spray</h3>
+        <div class="card-stars">★★★★★ <span class="card-reviews">(188)</span></div>
+        <div class="card-price-row"><span class="card-price">$25</span></div>
+      </div>
+    </article>
+
+    <!-- Product 14: Berry Wine Lip Gloss -->
+    <article class="product-card" data-skintones="medium,tan,deep">
+      <div class="card-img" style="background:#E9D0D4;">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&w=900&q=85" alt="Berry Wine Lip Gloss" loading="lazy" />
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Atelier</p>
+        <h3 class="card-name">Berry Wine Lip Gloss</h3>
+        <div class="card-stars">★★★★★ <span class="card-reviews">(167)</span></div>
+        <div class="card-price-row"><span class="card-price">$28</span></div>
+      </div>
+    </article>
+
+    <!-- Product 15: Shadow Palette Pro -->
+    <article class="product-card" data-skintones="fair,light,medium,tan,deep">
+      <div class="card-img" style="background:#F0E5DC;">
+        <img src="https://images.unsplash.com/photo-1615634260253-ba2c643f2c84?auto=format&w=900&q=85" alt="Shadow Palette Pro" loading="lazy" />
+        <span class="card-badge badge-sale">&minus;10%</span>
+        <div class="card-actions">
+          <button class="card-action-btn wishlist-btn" type="button">❤ Wishlist</button>
+          <button class="card-action-btn card-action-accent add-to-cart-btn" type="button">🛒 Add to Cart</button>
+        </div>
+      </div>
+      <div class="card-info">
+        <p class="card-brand">Lux&egrave;re Studio</p>
+        <h3 class="card-name">Shadow Palette Pro</h3>
+        <div class="card-stars">★★★★★ <span class="card-reviews">(212)</span></div>
+        <div class="card-price-row"><span class="card-price">$45</span><span class="card-price-old">$50</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- SUGGESTIONS SECTION BY SKIN TONE -->
+<section class="suggestions-section" id="suggestions">
+  <div class="section-header">
+    <p class="section-label">&#10022; Personalized Suggestions</p>
+    <h2 class="section-title">Products for Your<br /><em>Skin Tone</em></h2>
+    <p class="section-sub">Discover the perfect makeup products tailored to complement your unique skin tone and bring out your natural beauty.</p>
+  </div>
+
+  <!-- Fair Skin Tone Recommendations -->
+  <div class="suggestion-box">
+    <h3 class="suggestion-title">Fair Skin</h3>
+    <div class="suggestion-content">
+      <p class="suggestion-description">For fair skin, cool and warm undertones both shine. Rosy blushes, nude lip liners, and cool-toned eyeshadows create a beautiful contrast.</p>
+      <div class="suggestion-grid">
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&w=300&q=85" alt="Rose Toned Lipstick"/>
+          <h4>Rose Toned Lipstick</h4>
+          <p class="suggestion-item-desc">Perfect rosy undertone for fair skin</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1631214540553-ff044a3cc0a7?auto=format&w=300&q=85" alt="Nude Lip Liner"/>
+          <h4>Nude Lip Liner</h4>
+          <p class="suggestion-item-desc">Enhances fair complexion beautifully</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1596599810694-b5ac4dd12b55?auto=format&w=300&q=85" alt="Soft Pink Blush"/>
+          <h4>Soft Pink Blush</h4>
+          <p class="suggestion-item-desc">Creates a delicate, fresh look</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Light Skin Tone Recommendations -->
+  <div class="suggestion-box">
+    <h3 class="suggestion-title">Light Skin</h3>
+    <div class="suggestion-content">
+      <p class="suggestion-description">Light skin showcases soft pinks, warm browns, and subtle golds beautifully. Warm-toned eyeshadows and peach-based blushes are ideal.</p>
+      <div class="suggestion-grid">
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&w=300&q=85" alt="Warm Brown Lash Mascara"/>
+          <h4>Lash Lift Mascara</h4>
+          <p class="suggestion-item-desc">Defines light eyes with warmth</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&w=300&q=85" alt="Warm Gold Highlighter"/>
+          <h4>Golden Hour Highlighter</h4>
+          <p class="suggestion-item-desc">Adds warmth and dimension</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd12b55?auto=format&w=300&q=85" alt="Foundation"/>
+          <h4>Skin Veil Foundation</h4>
+          <p class="suggestion-item-desc">Seamless coverage for light skin</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Medium Skin Tone Recommendations -->
+  <div class="suggestion-box">
+    <h3 class="suggestion-title">Medium Skin</h3>
+    <div class="suggestion-content">
+      <p class="suggestion-description">Medium skin is versatile and works with a wide range of colors. Rich jewel tones, warm terracottas, and bold lip shades are stunning choices.</p>
+      <div class="suggestion-grid">
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?auto=format&w=300&q=85" alt="Rich Kohl Eyeliner"/>
+          <h4>Kohl Kajal Pencil</h4>
+          <p class="suggestion-item-desc">Rich definition for medium skin</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1615634260253-ba2c643f2c84?auto=format&w=300&q=85" alt="Jewel Tone Palette"/>
+          <h4>Shadow Palette Pro</h4>
+          <p class="suggestion-item-desc">Multiple jewel tones for versatility</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&w=300&q=85" alt="Warm Concealer"/>
+          <h4>Brightening Concealer</h4>
+          <p class="suggestion-item-desc">Complements medium undertones</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tan Skin Tone Recommendations -->
+  <div class="suggestion-box">
+    <h3 class="suggestion-title">Tan Skin</h3>
+    <div class="suggestion-content">
+      <p class="suggestion-description">Tan skin glows with warm bronzes, rich teracotta, and deep warm reds. Warm-toned products enhance the natural warmth of your complexion.</p>
+      <div class="suggestion-grid">
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&w=300&q=85" alt="Berry Wine Lip Gloss"/>
+          <h4>Berry Wine Lip Gloss</h4>
+          <p class="suggestion-item-desc">Deep tones for tan skin</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&w=300&q=85" alt="Bronze Highlighter"/>
+          <h4>Golden Hour Highlighter</h4>
+          <p class="suggestion-item-desc">Enhances warm glow</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&w=300&q=85" alt="Powder"/>
+          <h4>Soft Focus Compact Powder</h4>
+          <p class="suggestion-item-desc">Matte perfection for tan skin</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Deep Skin Tone Recommendations -->
+  <div class="suggestion-box">
+    <h3 class="suggestion-title">Deep Skin</h3>
+    <div class="suggestion-content">
+      <p class="suggestion-description">Deep skin is luminous with rich jewel tones, deep burgundies, and vibrant reds. Bold statement colors make a striking impact.</p>
+      <div class="suggestion-grid">
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&w=300&q=85" alt="Deep Red Lipstick"/>
+          <h4>Velvet Matte Lipstick</h4>
+          <p class="suggestion-item-desc">Rich, bold color for deep skin</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1615634260253-ba2c643f2c84?auto=format&w=300&q=85" alt="Rich Palette"/>
+          <h4>Shadow Palette Pro</h4>
+          <p class="suggestion-item-desc">Vibrant shades for depth</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+        <div class="suggestion-item">
+          <img src="https://images.unsplash.com/photo-1605331221473-06b97b6b6cf5?auto=format&w=300&q=85" alt="Bold Eyeliner"/>
+          <h4>Precision Liquid Eyeliner</h4>
+          <p class="suggestion-item-desc">Creates striking definition</p>
+          <button class="btn-primary small">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Skintone Filter Functionality
+function filterBySkintone() {
+  const checkboxes = document.querySelectorAll('.skintone-checkbox input:checked');
+  const selectedSkintones = Array.from(checkboxes).map(cb => cb.value);
+  const products = document.querySelectorAll('.product-card');
+
+  if (selectedSkintones.length === 0) {
+    // Show all products
+    products.forEach(product => {
+      product.style.display = 'block';
+    });
+  } else {
+    // Filter products based on selected skintones
+    products.forEach(product => {
+      const productSkintones = product.getAttribute('data-skintones').split(',');
+      const isMatch = selectedSkintones.some(tone => productSkintones.includes(tone));
+      product.style.display = isMatch ? 'block' : 'none';
+    });
+  }
+}
+
+// Wishlist Button Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+  wishlistBtns.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.classList.toggle('added');
+      if(this.classList.contains('added')) {
+        alert('Added to Wishlist!');
+      } else {
+        alert('Removed from Wishlist!');
+      }
+    });
+  });
+
+  // Add to Cart Button Functionality
+  const cartBtns = document.querySelectorAll('.add-to-cart-btn');
+  cartBtns.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      alert('Added to Cart!');
+    });
+  });
+});
+</script>
+
+<div class="promo-banner">
+  <div class="promo-text">
+    <p class="eyebrow">&#10022; Makeup Wardrobe</p>
+    <h2>Build a Polished Look<br />in Three Steps</h2>
+    <p>Start with complexion staples, define the eyes with liner and mascara, then finish with lip colour and a mist of setting spray for a refined all-day result.</p>
+    <div class="promo-features">
+      <div class="promo-feature"><div class="feature-dot"></div>Primer, foundation, concealer, and compact for a smooth base</div>
+      <div class="promo-feature"><div class="feature-dot"></div>Eyeliner, kajal, mascara, and brow gel for shape and definition</div>
+      <div class="promo-feature"><div class="feature-dot"></div>Blush, highlighter, lip liner, and lipstick for dimension and finish</div>
+    </div>
+    <a class="btn-primary" href="#makeup-products">Shop the Full Edit</a>
+  </div>
+  <div class="promo-visual promo-image-frame">
+    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&w=1200&q=85" alt="Makeup brushes and products laid out neatly" />
+    <div class="promo-image-overlay"></div>
+    <div class="promo-image-caption">
+      <p>The Atelier Edit</p>
+    </div>
+  </div>
+</div>
+
+<section class="section section-white">
+  <div class="section-header">
+    <p class="section-label">&#10022; Finish Guide</p>
+    <h2 class="section-title">Curate Your Everyday<br />Makeup Routine</h2>
+  </div>
+  <div class="routine-grid">
+    <div class="routine-card">
+      <p class="routine-step">01 Complexion</p>
+      <h3>Perfect the Base</h3>
+      <p>Pair Silk Touch Primer with Skin Veil Foundation, Brightening Concealer, and Soft Focus Compact Powder for a smooth, breathable base.</p>
+    </div>
+    <div class="routine-card">
+      <p class="routine-step">02 Definition</p>
+      <h3>Frame the Eyes</h3>
+      <p>Use Precision Liquid Eyeliner, Kohl Kajal Pencil, Lash Lift Mascara, and Brow Sculpt Gel to create a clean, lifted eye look.</p>
+    </div>
+    <div class="routine-card">
+      <p class="routine-step">03 Colour</p>
+      <h3>Finish with Glow</h3>
+      <p>Bring warmth with Rose Flush Blush, Golden Hour Highlighter, and a lip duo of Nude Lip Liner plus your favorite Lux&egrave;re lipstick.</p>
+    </div>
+  </div>
+</section>
+
+<div class="newsletter">
+  <p class="newsletter-label">&#10022; Join the Inner Circle</p>
+  <h2>Makeup Launches,<br />Early Access &amp; More</h2>
+  <p>Subscribe for exclusive offers, early access to new colour stories, and curated makeup rituals.</p>
+  <div class="newsletter-form">
+    <input class="newsletter-input" type="email" placeholder="Your email address" />
+    <button class="newsletter-btn" type="button">Subscribe</button>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><a href="index.html">LU<span>X</span>&Egrave;RE</a></div>
+      <p>Luxury beauty rituals crafted with rare botanicals. Conscious beauty without compromise.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="index.html#featured-products">New Arrivals</a></li>
+        <li><a href="index.html#featured-products">Bestsellers</a></li>
+        <li><a href="index.html#categories">Skincare</a></li>
+        <li><a href="makeup.html">Makeup</a></li>
+        <li><a href="index.html#categories">Fragrance</a></li>
+        <li><a href="index.html#collections">Gift Sets</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html#collections">Our Story</a></li>
+        <li><a href="index.html#collections">Ingredients</a></li>
+        <li><a href="index.html#collections">Sustainability</a></li>
+        <li><a href="index.html#collections">Press</a></li>
+        <li><a href="index.html#collections">Stockists</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Lux&egrave;re Beauty. All rights reserved.</span>
+    <div class="footer-payment">
+      <span class="payment-badge payment-plain" title="Visa">
+        <svg width="48" height="30" viewBox="0 0 48 30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Visa"><rect width="48" height="30" rx="4" fill="#1A1F71"></rect><text x="24" y="20" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="white" font-style="italic" letter-spacing="1">VISA</text></svg>
+      </span>
+      <span class="payment-badge payment-plain" title="Mastercard">
+        <svg width="48" height="30" viewBox="0 0 48 30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mastercard"><rect width="48" height="30" rx="4" fill="#252525"></rect><circle cx="19" cy="15" r="10" fill="#EB001B"></circle><circle cx="29" cy="15" r="10" fill="#F79E1B" opacity=".88"></circle></svg>
+      </span>
+      <span class="payment-badge payment-plain" title="American Express">
+        <svg width="48" height="30" viewBox="0 0 48 30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="American Express"><rect width="48" height="30" rx="4" fill="#2557D6"></rect><text x="24" y="20" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="white" letter-spacing=".5">AMEX</text></svg>
+      </span>
+      <span class="payment-badge payment-plain" title="PayPal">
+        <svg width="58" height="30" viewBox="0 0 58 30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PayPal"><rect width="58" height="30" rx="4" fill="#003087"></rect><text x="29" y="19" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700"><tspan fill="#009CDE">Pay</tspan><tspan fill="white">Pal</tspan></text></svg>
+      </span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
